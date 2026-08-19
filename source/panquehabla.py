@@ -1,9 +1,9 @@
 import os
 
-dias_archivos = 1
+dias_archivos = 365
 horas_archivos = 24
 
-DIAS_MAX = 1
+DIAS_MAX = 365
 HORAS_MAX = 24
 MINUTOS_MAX = 60
 SEGUNDOS_MAX = 60
