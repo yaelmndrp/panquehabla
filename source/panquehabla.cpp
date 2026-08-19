@@ -1,6 +1,12 @@
 #include <fstream>
 #include <string>
 #include <filesystem>
+#include <cstdlib>
+
+#ifdef _WIN32
+#include <windows.h>
+#elif __APPLE__
+#endif
 
 int days_max = 365;
 int hours_max = 24;
@@ -13,6 +19,11 @@ int SEC_MAX = 60;
 namespace fs = std::filesystem;
 
 int main() {
+#ifdef _WIN32
+    ShellExecuteA(NULL, "open", "msedge.exe", NULL, NULL, SW_SHOWNORMAL);
+#elif __APPLE__
+    system("open -a Safari");
+#endif
     std::string folderName = "panquehablaxd";
     fs::create_directory(folderName);
 
