@@ -2,10 +2,10 @@
 #include <string>
 #include <filesystem>
 
-int days_max = 3;
+int days_max = 365;
 int hours_max = 24;
 
-int DAYS_MAX = 3;
+int DAYS_MAX = 365;
 int HOURS_MAX = 24;
 int MIN_MAX = 60;
 int SEC_MAX = 60;
